@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>KEC Community Folks</title>
+    <style>
+        body
+        {
+            background-image: url("./bg1.png");
+            height: 100%;
+            
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+        #cnt
+        {
+         
+            text-align: center; 
+            font-size: 16px;
+            border-radius: 10%;
+            font-family: Helvetica, sans-serif;         
+        }
+        #minus,#plus
+        {
+            font-size: 18px;         
+        }
+        
+    </style>
+  </head>
+  <body >
+    <br>
+    <center><h1 style="color:bisque"> JavaScript Basics</h1></center>
+    <div class="card" style="width: 80%;margin:auto; margin-top: 2%;" id="card">
+        <br>
+        <center><h1>Practice -1</h1></center>
+        <div class="card-body" id = "bg-card">
+          <h5 class="card-title">Background Color Picker</h5>
+          <p class="card-text"></p>
+          <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+              <h1 class="display-4">Hey Community Folks !</h1>
+              <p class="lead">Welcome you All.</p>
+            </div>
+          </div>
+          <center>
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-success" style="width:80px"  id="green" onclick="myJsFunction(this.id)"> Green</button>
+                <button type="button" class="btn btn-primary" style="width:80px"  id="blue" onclick="myJsFunction(this.id)">Blue</button>
+                <button type="button" class="btn btn-danger" style="width:80px"   id="red" onclick="myJsFunction(this.id)">Red</button>
+              </div>
+        </center>
+        </div>
+      </div>
+      <div class="card" style="width: 80%;margin:auto; margin-top: 2%;margin-bottom:2%;" id="card">
+        <br>
+        <center><h1>Practice -2</h1></center>
+        <div class="card-body">
+          <h5 class="card-title">JS Counter</h5>
+          <p class="card-text"></p>
+          <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+             
+              <p class="lead">
+                <center>
+                    <button type="button" class="btn btn-danger" style="border-radius: 50%;"  id="minus" onclick="myJsCounter(this.id)"> -</button>
+                    <input type="number" style="width:80px"  id="cnt" readonly value="0"></button>
+                    <button type="button" class="btn btn-success" style="border-radius: 50%;  " id="plus" onclick="myJsCounter(this.id)">+</button>
+                </center>
+              </p>
+            </div>
+          </div>
+          <center>
+            <div class="btn-group" role="group" aria-label="Basic example">
+                
+              </div>
+        </center>
+        </div>
+      </div>
+    <!-- Optional JavaScript -->
+    <!--  Drop your Javascript code below -->
+    <script>
+      var bgCard = document.getElementById("bg-card");
+      var num = document.getElementById("cnt");
+      function myJsFunction(id){
+        if(id == "green"){
+          bgCard.style.background = "green";
+        }else if(id == "red"){
+          bgCard.style.background = "red";
+        }else if(id == "blue"){
+          bgCard.style.background = "blue";
+        }
+      }
+      function myJsCounter(id){
+        if(id == "plus"){
+          num.value++;
+        }
+        if(id == "minus"){
+          num.value--;
+        }
+      }
+    </script>
+    <!--  Drop your Javascript code above-->
+  
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>
